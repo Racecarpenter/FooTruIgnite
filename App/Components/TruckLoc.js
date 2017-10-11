@@ -42,8 +42,8 @@ class TruckLoc extends React.Component {
     * You can generate a handy `calculateRegion` function with
     * `ignite generate map-utilities`
     *************************************************************/
-    const region = calculateRegion(locations, { latPadding: 0.05, longPadding: 0.05 })
-
+    // const region = calculateRegion(locations, { latPadding: 0.05, longPadding: 0.05 })
+    const region = { latitude: 123, longitude: 123, latitudeDelta: 0.1, longitudeDelta: 0.1};
     this.state = {
       region,
       locations,
@@ -54,14 +54,9 @@ class TruckLoc extends React.Component {
   }
 
   componentWillReceiveProps (newProps) {
-    /* ***********************************************************
-    * STEP 3
-    * If you wish to recenter the map on new locations any time the
-    * props change, do something like this:
-    *************************************************************/
-    // this.setState({
-    //   region: calculateRegion(newProps.locations, { latPadding: 0.1, longPadding: 0.1 })
-    // })
+    this.setState({
+      region: calculateRegion(newProps.locations, { latPadding: 0.1, longPadding: 0.1 })
+     })
   }
 
   onRegionChange (newRegion) {
