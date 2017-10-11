@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
-import { ScrollView, Text, KeyboardAvoidingView } from 'react-native'
+import { View, Text } from 'react-native'
 import { connect } from 'react-redux'
 import TruckLoc from '../Components/TruckLoc'
+import { Button } from 'native-base'
+import Styles from '../Components/Styles/TruckLocStyles'
 // Add Actions - replace 'Your' with whatever your reducer is called :)
 // import YourActions from '../Redux/YourRedux'
 
@@ -10,12 +12,11 @@ import styles from './Styles/FtlScreenStyle'
 
 class FtlScreen extends Component {
   render () {
+    let {navigate} = this.props.navigation;
     return (
-      <ScrollView style={styles.container}>
-        <KeyboardAvoidingView behavior='position'>
+      <View style={Styles.map}>
           <TruckLoc />
-        </KeyboardAvoidingView>
-      </ScrollView>
+      </View>
     )
   }
 }

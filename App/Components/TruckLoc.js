@@ -32,8 +32,9 @@ class TruckLoc extends React.Component {
     * a latitude and longitude as well as any additional information you wish to display.
     *************************************************************/
     const locations = [
-      { title: 'Location A', latitude: 37.78825, longitude: -122.4324 },
-      { title: 'Location B', latitude: 37.75825, longitude: -122.4624 }
+      { title: "Manny's Tacos", latitude: 33.440454, longitude: -112.066924 },
+      { title: "Luigi's Lasagna", latitude: 33.445526, longitude: -112.066664 },
+      { title: "Samurai Sushi", latitude: 33.441124, longitude: -112.067435 }
     ]
     /* ***********************************************************
     * STEP 2
@@ -42,8 +43,8 @@ class TruckLoc extends React.Component {
     * You can generate a handy `calculateRegion` function with
     * `ignite generate map-utilities`
     *************************************************************/
-    // const region = calculateRegion(locations, { latPadding: 0.05, longPadding: 0.05 })
-    const region = { latitude: 123, longitude: 123, latitudeDelta: 0.1, longitudeDelta: 0.1};
+    const region = calculateRegion(locations, { latPadding: 0.05, longPadding: 0.05 })
+    // const region = { latitude: 123, longitude: 123, latitudeDelta: 0.1, longitudeDelta: 0.1};
     this.state = {
       region,
       locations,
