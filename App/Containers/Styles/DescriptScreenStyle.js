@@ -4,6 +4,10 @@ import { ApplicationStyles } from '../../Themes/'
 export default StyleSheet.create({
   ...ApplicationStyles.screen,
   info:{
-    alignItems:'center'
+    alignItems:'center',
+    marginTop: 300
+  },
+  fontz:{
+    fontSize: 24
   }
 })

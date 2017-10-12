@@ -32,9 +32,9 @@ class TruckLoc extends React.Component {
     * a latitude and longitude as well as any additional information you wish to display.
     *************************************************************/
     const locations = [
-      { title: "Manny's Tacos", latitude: 33.440454, longitude: -112.066924, description: "Tacos from ya boy manny" },
-      { title: "Luigi's Lasagna", latitude: 33.445526, longitude: -112.066664, description: "lasagna from ya boy luigi" },
-      { title: "Samurai Sushi", latitude: 33.441124, longitude: -112.067435, description: "sushi from a real samurai" }
+      { title: "Manny's Tacos", latitude: 33.440454, longitude: -112.066924, description: "Tacos from ya boy manny", date:"10/11/2017", time:"11am to 6pm" },
+      { title: "Luigi's Lasagna", latitude: 33.445526, longitude: -112.066664, description: "lasagna from ya boy luigi", date:"10/11/2017", time:"12pm to 4pm" },
+      { title: "Samurai Sushi", latitude: 33.441124, longitude: -112.067435, description: "sushi from a real samurai", date:"10/11/2017", time:"4pm to 8pm" }
     ]
     /* ***********************************************************
     * STEP 2
