@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import { ScrollView, View, Text, KeyboardAvoidingView } from 'react-native'
+import { ScrollView, View, Text, KeyboardAvoidingView, Image } from 'react-native'
 import { connect } from 'react-redux'
-import { Button } from 'native-base'
+import { Button, Content, Card, CardItem, Body, Label } from 'native-base'
 // Add Actions - replace 'Your' with whatever your reducer is called :)
 // import YourActions from '../Redux/YourRedux'
 
@@ -16,19 +16,49 @@ class DescriptScreen extends Component {
     return (
       <ScrollView style={styles.container}>
         <KeyboardAvoidingView behavior='position'>
-          <View style={styles.info}>
-            <Text style={styles.fontz}>{location.description}</Text>
-            <Text style={styles.fontz}>{location.date}</Text>
-            <Text style={styles.fontz}>{location.time}</Text>
-            <Button
-            danger
-            onPress={() => goBack()}
-            title="Fatal"
-            style={{alignSelf: 'center'}}
-            >
-            <Text>Back to Maps</Text>
-            </Button>
+          <View>
+            <Image
+              style={{height: 50, alignSelf:'center'}}
+            />
           </View>
+            <View style={styles.info}>
+            <Content>
+              <Card>
+                <Label>
+                  <Text style={styles.labelfont}>
+                    Message from the Owner:
+                  </Text>
+                </Label>
+                <CardItem>
+                  <Body>
+                   <Text style={styles.fontz}>
+                    {location.description}
+                   </Text>
+                  </Body>
+                </CardItem>
+                    <Label>
+                      <Text style={styles.labelfont}>
+                        Time Available Today:
+                      </Text>
+                    </Label>
+                  <CardItem>
+                    <Body>
+                     <Text style={styles.fontz}>
+                      {location.time}
+                     </Text>
+                    </Body>
+                  </CardItem>
+                </Card>
+            </Content>
+              <Button
+              danger
+              onPress={() => goBack()}
+              title="Fatal"
+              style={styles.zutton}
+              >
+              <Text style={styles.maptext}>Back to Maps</Text>
+              </Button>
+            </View>
         </KeyboardAvoidingView>
       </ScrollView>
     )

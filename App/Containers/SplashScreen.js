@@ -31,7 +31,7 @@ class SplashScreen extends Component {
                 danger
                 onPress={() => navigate("FtlScreen")}
                 title="FTL">
-                  <Text>
+                  <Text style={styles.findatruck}>
                   Find a Truck
                   </Text>
               </Button>

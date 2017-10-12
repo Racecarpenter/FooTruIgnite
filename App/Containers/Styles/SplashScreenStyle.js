@@ -37,5 +37,11 @@ export default StyleSheet.create({
   githubpage: {
     alignItems: 'center',
     marginTop: 50
+  },
+  findatruck: {
+    color: 'white',
+    textShadowColor: 'black',
+    textShadowOffset: {'width': 0.5, 'height': 0.5},
+    textShadowRadius: 2
   }
 })

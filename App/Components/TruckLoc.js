@@ -32,9 +32,26 @@ class TruckLoc extends React.Component {
     * a latitude and longitude as well as any additional information you wish to display.
     *************************************************************/
     const locations = [
-      { title: "Manny's Tacos", latitude: 33.440454, longitude: -112.066924, description: "Tacos from ya boy manny", date:"10/11/2017", time:"11am to 6pm" },
-      { title: "Luigi's Lasagna", latitude: 33.445526, longitude: -112.066664, description: "lasagna from ya boy luigi", date:"10/11/2017", time:"12pm to 4pm" },
-      { title: "Samurai Sushi", latitude: 33.441124, longitude: -112.067435, description: "sushi from a real samurai", date:"10/11/2017", time:"4pm to 8pm" }
+      {
+        title: "Manny's Tacos",
+        img: 'http://www.tonayense.com/sites/all/themes/tonayense/slide/homep-1.jpg',
+        latitude: 33.440454, longitude: -112.066924,
+        description: "Tacos from ya boy manny",
+        date:"10/11/2017", time:"11am to 6pm"
+       },
+      {
+        title: "Luigi's Lasagna",
+        img: 'https://images1.houstonpress.com/imager/u/745xauto/7989576/hou_food_20151205berniesbackyard_chuckcook_004.jpg',
+        latitude: 33.445526, longitude: -112.066664,
+        description: "lasagna from ya boy luigi",
+        date:"10/11/2017", time:"12pm to 4pm" },
+      {
+        title: "Samurai Sushi",
+        img: 'http://occ144datkn3vrjlq7r63p19.wpengine.netdna-cdn.com/wp-content/uploads/2011/07/paramodel_tommy_sushi.jpg',
+        latitude: 33.441124, longitude: -112.067435,
+        description: "sushi from a real samurai",
+        date:"10/11/2017", time:"4pm to 8pm"
+      }
     ]
     /* ***********************************************************
     * STEP 2
