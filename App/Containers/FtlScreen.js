@@ -15,7 +15,10 @@ class FtlScreen extends Component {
     let {navigate} = this.props.navigation;
     return (
       <View style={Styles.map}>
-          <TruckLoc />
+          <TruckLoc
+            navigate={navigate}
+          />
+
       </View>
     )
   }

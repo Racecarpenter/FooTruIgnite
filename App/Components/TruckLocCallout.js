@@ -6,7 +6,6 @@ import Styles from './Styles/TruckLocCalloutStyles'
 export default class TruckLocCallout extends React.Component {
   constructor (props) {
     super(props)
-    this.onPress = this.props.onPress.bind(this, this.props.location)
   }
 
   render () {
@@ -14,11 +13,17 @@ export default class TruckLocCallout extends React.Component {
     * Customize the appearance of the callout that opens when the user interacts with a marker.
     * Note: if you don't want your callout surrounded by the default tooltip, pass `tooltip={true}` to `Callout`
     *************************************************************/
-    const { location } = this.props
+    let { location } = this.props
+    console.log("props", this.props)
     return (
       <Callout style={Styles.callout}>
-        <TouchableOpacity onPress={this.onPress}>
-          <Text>{location.title}</Text>
+        <TouchableOpacity onPress={this.props.onPress.bind(this, this.props.location)}>
+        <Text
+          onPress={() => this.props.navigate("DescriptScreen", {location})}
+          title="gimme"
+          >
+          {location.title}
+        </Text>
         </TouchableOpacity>
       </Callout>
     )

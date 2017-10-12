@@ -1,4 +1,5 @@
 import { StackNavigator } from 'react-navigation'
+import DescriptScreen from '../Containers/DescriptScreen'
 import PostLocScreen from '../Containers/PostLocScreen'
 import CreateUserScreen from '../Containers/CreateUserScreen'
 import FtlScreen from '../Containers/FtlScreen'
@@ -10,6 +11,7 @@ import styles from './Styles/NavigationStyles'
 
 // Manifest of possible screens
 const PrimaryNav = StackNavigator({
+  DescriptScreen: { screen: DescriptScreen },
   PostLocScreen: { screen: PostLocScreen },
   CreateUserScreen: { screen: CreateUserScreen },
   FtlScreen: { screen: FtlScreen },

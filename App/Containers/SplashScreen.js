@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ScrollView, Text, Image, View, KeyboardAvoidingView } from 'react-native';
+import { ScrollView, Text, Image, View, KeyboardAvoidingView, Linking, TouchableHighlight } from 'react-native';
 import { connect } from 'react-redux';
 import { Button } from 'native-base';
 // Add Actions - replace 'Your' with whatever your reducer is called :)
@@ -35,6 +35,12 @@ class SplashScreen extends Component {
                   Find a Truck
                   </Text>
               </Button>
+              <View style={styles.githubpage}>
+                <Text style={{color: 'white'}}
+                  onPress={() => Linking.openURL('https://github.com/Racecarpenter/FooTruIgnite')}>
+                    Github Source Code
+                </Text>
+              </View>
           </View>
         </KeyboardAvoidingView>
       </ScrollView>

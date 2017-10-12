@@ -5,8 +5,7 @@ export default StyleSheet.create({
   ...ApplicationStyles.screen,
   splashContain: {
     marginTop: -10,
-    paddingTop: 180,
-    paddingBottom: 50,
+    paddingTop: 150,
     backgroundColor: '#587576',
   },
   ftlogo: {
@@ -23,12 +22,20 @@ export default StyleSheet.create({
   butoon: {
     marginTop: 30,
     padding: 10,
-    marginLeft: 20
+    marginLeft: 20,
+    paddingLeft: 20,
+    paddingRight: 20
   },
   buton: {
-    marginRight: 20,
+    marginRight: 30,
     marginTop: -45,
     padding: 10,
+    paddingLeft: 30,
+    paddingRight: 30,
     alignSelf: 'flex-end'
+  },
+  githubpage: {
+    alignItems: 'center',
+    marginTop: 50
   }
 })

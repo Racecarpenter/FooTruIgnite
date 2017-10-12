@@ -32,9 +32,9 @@ class TruckLoc extends React.Component {
     * a latitude and longitude as well as any additional information you wish to display.
     *************************************************************/
     const locations = [
-      { title: "Manny's Tacos", latitude: 33.440454, longitude: -112.066924 },
-      { title: "Luigi's Lasagna", latitude: 33.445526, longitude: -112.066664 },
-      { title: "Samurai Sushi", latitude: 33.441124, longitude: -112.067435 }
+      { title: "Manny's Tacos", latitude: 33.440454, longitude: -112.066924, description: "Tacos from ya boy manny" },
+      { title: "Luigi's Lasagna", latitude: 33.445526, longitude: -112.066664, description: "lasagna from ya boy luigi" },
+      { title: "Samurai Sushi", latitude: 33.441124, longitude: -112.067435, description: "sushi from a real samurai" }
     ]
     /* ***********************************************************
     * STEP 2
@@ -74,20 +74,24 @@ class TruckLoc extends React.Component {
   }
 
   renderMapMarkers (location) {
+    let {navigate} = this.props;
     return (
       <MapView.Marker key={location.title} coordinate={{latitude: location.latitude, longitude: location.longitude}}>
-        <TruckLocCallout location={location} onPress={this.calloutPress} />
+        <TruckLocCallout navigate={navigate} location={location} onPress={this.calloutPress} />
       </MapView.Marker>
     )
   }
 
   render () {
+
+    console.log("proppy", this.props)
     return (
       <MapView
         style={Styles.map}
         initialRegion={this.state.region}
         onRegionChangeComplete={this.onRegionChange}
         showsUserLocation={this.state.showUserLocation}
+
       >
         {this.state.locations.map((location) => this.renderMapMarkers(location))}
       </MapView>
