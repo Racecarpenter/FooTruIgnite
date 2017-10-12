@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, Text } from 'react-native'
+import { View, Text, Image } from 'react-native'
 import { connect } from 'react-redux'
 import TruckLoc from '../Components/TruckLoc'
 import { Button } from 'native-base'
@@ -18,7 +18,18 @@ class FtlScreen extends Component {
           <TruckLoc
             navigate={navigate}
           />
-
+        <Button
+        onPress={() => navigate("SplashScreen")}
+        title="backHome"
+        danger
+        block
+        style={styles.butt}
+        >
+        <Image
+          style={{height: 40, width: 40}}
+          source={require('../../images/icon_arrow_left.png')}
+        />
+        </Button>
       </View>
     )
   }
