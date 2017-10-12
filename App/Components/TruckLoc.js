@@ -34,9 +34,9 @@ class TruckLoc extends React.Component {
     const locations = [
       {
         title: "Manny's Tacos",
-        img: 'http://www.tonayense.com/sites/all/themes/tonayense/slide/homep-1.jpg',
+        img: 'https://images1.browardpalmbeach.com/imager/u/745xauto/7174233/img_3646.jpeg',
         latitude: 33.440454, longitude: -112.066924,
-        description: "Tacos from ya boy manny",
+        description: "Choice of 2 Tacos for $2",
         date:"10/11/2017", time:"11am to 6pm"
        },
       {
@@ -44,12 +44,13 @@ class TruckLoc extends React.Component {
         img: 'https://images1.houstonpress.com/imager/u/745xauto/7989576/hou_food_20151205berniesbackyard_chuckcook_004.jpg',
         latitude: 33.445526, longitude: -112.066664,
         description: "lasagna from ya boy luigi",
-        date:"10/11/2017", time:"12pm to 4pm" },
+        date:"10/11/2017", time:"12pm to 4pm"
+      },
       {
         title: "Samurai Sushi",
-        img: 'http://occ144datkn3vrjlq7r63p19.wpengine.netdna-cdn.com/wp-content/uploads/2011/07/paramodel_tommy_sushi.jpg',
+        img: 'https://saturdaynightfoodies.com/wp-content/uploads/2011/03/P1060973.jpg',
         latitude: 33.441124, longitude: -112.067435,
-        description: "sushi from a real samurai",
+        description: "$5 poke bowls **Today ONLY**",
         date:"10/11/2017", time:"4pm to 8pm"
       }
     ]

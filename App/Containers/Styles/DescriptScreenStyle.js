@@ -4,7 +4,7 @@ import { ApplicationStyles } from '../../Themes/'
 export default StyleSheet.create({
   ...ApplicationStyles.screen,
   info:{
-    marginTop: 300
+    marginTop: 50
   },
   fontz:{
     alignSelf: 'center',
@@ -27,5 +27,15 @@ export default StyleSheet.create({
     textShadowColor: 'black',
     textShadowOffset: {'width': 0.5, 'height': 0.5},
     textShadowRadius: 2
+  },
+  foodimg: {
+    alignSelf: 'center',
+    height: 200,
+    width: 300,
+    borderWidth: 3,
+    borderColor: 'red'
+  },
+  imgview: {
+    marginTop: 100
   }
 })

@@ -16,9 +16,10 @@ class DescriptScreen extends Component {
     return (
       <ScrollView style={styles.container}>
         <KeyboardAvoidingView behavior='position'>
-          <View>
+          <View style={styles.imgview}>
             <Image
-              style={{height: 50, alignSelf:'center'}}
+              style={styles.foodimg}
+              source={{uri: location.img}}
             />
           </View>
             <View style={styles.info}>
