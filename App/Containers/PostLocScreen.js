@@ -36,9 +36,8 @@ class PostLocScreen extends Component {
                   />
                 </Item>
                 <Item floatingLabel last>
-                  <Label>Photo</Label>
+                  <Label>Photo "url"</Label>
                   <Input
-                    placeholder="url"
                     autoCapitalize="none"
                   />
                 </Item>

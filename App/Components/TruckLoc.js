@@ -33,24 +33,24 @@ class TruckLoc extends React.Component {
     *************************************************************/
     const locations = [
       {
-        title: "Manny's Tacos",
+        title: "Tiki Tacos",
         img: 'https://images1.browardpalmbeach.com/imager/u/745xauto/7174233/img_3646.jpeg',
-        latitude: 33.440454, longitude: -112.066924,
-        description: "Choice of 2 Tacos for $2",
+        latitude: 33.436020, longitude: -112.073507,
+        description: "2 Hawaiian Tacos for $2",
         date:"10/11/2017", time:"11am to 6pm"
        },
       {
-        title: "Luigi's Lasagna",
+        title: "Lasagna St.",
         img: 'https://images1.houstonpress.com/imager/u/745xauto/7989576/hou_food_20151205berniesbackyard_chuckcook_004.jpg',
-        latitude: 33.445526, longitude: -112.066664,
-        description: "lasagna from ya boy luigi",
+        latitude: 33.442449, longitude: -112.069141,
+        description: "Buy a Lasagna Combo get a Canoli for free",
         date:"10/11/2017", time:"12pm to 4pm"
       },
       {
-        title: "Samurai Sushi",
-        img: 'https://saturdaynightfoodies.com/wp-content/uploads/2011/03/P1060973.jpg',
-        latitude: 33.441124, longitude: -112.067435,
-        description: "$5 poke bowls **Today ONLY**",
+        title: "Sushi On Wheelz",
+        img: 'https://static1.squarespace.com/static/56c4b6f14d088e922f185236/t/586e787c20099e929f5dc6fd/1483634922012/',
+        latitude: 33.439870, longitude: -112.066772,
+        description: "$5 poke bowls",
         date:"10/11/2017", time:"4pm to 8pm"
       }
     ]
