@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+  import React, { Component } from 'react'
 import { ScrollView, View, Text, KeyboardAvoidingView, Image } from 'react-native'
 import { connect } from 'react-redux'
 import { Button, Content, Card, CardItem, Body, Label } from 'native-base'
