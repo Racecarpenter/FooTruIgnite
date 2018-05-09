@@ -10,7 +10,7 @@ import styles from './Styles/DescriptScreenStyle'
 
 class DescriptScreen extends Component {
   render () {
-    console.log("poops", this.props)
+    console.log("props", this.props)
     let { location } = this.props.navigation.state.params
     let { navigate, goBack } = this.props.navigation
     return (
